@@ -178,7 +178,7 @@ using System.Net.Http.Json;
     
 }
 ```
-   * ## Quickstart with Speech To Text API
+   * ## Quickstart with OCR Tables API
   
    #### POST : https://api.edenai.run/v2/ocr/ocr_tables_async
    #### GET : https://api.edenai.run/v2/ocr/ocr_tables_async/{public_id}
