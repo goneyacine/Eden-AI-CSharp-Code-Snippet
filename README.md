@@ -200,7 +200,7 @@ public class Program
 
     static void Main(string[] args)
     {
-        Console.WriteLine("Speech To Text Started...");
+        Console.WriteLine("OCR Tables Started...");
 
         string filePath = "Your File Path Here";
         string apiKey = "Bearer 🔑 Your_API_Key";
