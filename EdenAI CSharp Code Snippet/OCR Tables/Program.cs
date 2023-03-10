@@ -19,19 +19,19 @@ public class Program
 
         HttpClient httpClient = new HttpClient();
 
-        //Speech To Text Job Lunch here
+        //OCR tables Job Lunch here
         MultipartFormDataContent content = new MultipartFormDataContent();
 
-        content.Add(new StreamContent(File.OpenRead(filePath)),"file",Path.GetFileName(filePath));
+        content.Add(new StreamContent(File.OpenRead(filePath)), "file", Path.GetFileName(filePath));
 
         StringContent stringContent = new StringContent("{\"providers\":\"microsoft\",\"language\":\"en\"}");
-        content.Add(new StringContent("microsoft"),"providers");
+        content.Add(new StringContent("microsoft"), "providers");
         content.Add(new StringContent("en"), "language");
 
-        HttpRequestMessage jobLunchRequest = new HttpRequestMessage(HttpMethod.Post, new Uri("https://api.edenai.run/v2/audio/speech_to_text_async"));
+        HttpRequestMessage jobLunchRequest = new HttpRequestMessage(HttpMethod.Post, new Uri("https://api.edenai.run/v2/ocr/ocr_tables_async"));
         jobLunchRequest.Content = content;
 
-       
+        
         jobLunchRequest.Headers.Add("Authorization", apiKey);
 
 
@@ -51,19 +51,19 @@ public class Program
                 Console.WriteLine(response.StatusCode.ToString());
             }
         }
-        //Speech to text get job results here
+        //ORC tables get job results here
 
-        //waiting until speech processing is finished to get the results (we make a request every 5 seconds)
+        //waiting until orc table processing is finished to get the results (we make a request every 5 seconds)
         while (true)
         {
-            HttpRequestMessage jobResultsRequest = new HttpRequestMessage(HttpMethod.Get, new Uri($"https://api.edenai.run/v2/audio/speech_to_text_async/{public_id}"));
+            HttpRequestMessage jobResultsRequest = new HttpRequestMessage(HttpMethod.Get, new Uri($"https://api.edenai.run/v2/ocr/ocr_tables_async/{public_id}"));
             jobResultsRequest.Headers.Add("Authorization", apiKey);
             using (HttpResponseMessage response = httpClient.Send(jobResultsRequest))
             {
                 if (response.IsSuccessStatusCode)
                 {
                     JobGetResults jobGetResults = response.Content.ReadFromJsonAsync<JobGetResults>().Result;
-                    if (jobGetResults.Status == "finished" )
+                    if (jobGetResults.Status == "finished")
                     {
                         Console.WriteLine("get job results succeeded");
                         Console.WriteLine(response.Content.ReadAsStringAsync().Result);
@@ -82,7 +82,7 @@ public class Program
             Thread.Sleep(5000);
         }
 
-        
+
         Console.ReadLine();
     }
 

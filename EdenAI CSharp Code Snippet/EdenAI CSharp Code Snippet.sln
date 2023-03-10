@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spell Check", "EdenAI CSharp Code Snippet\Spell Check.csproj", "{464705D3-4E5F-4268-95FC-C28EB64902DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Speech To Text", "Speech To Text\Speech To Text.csproj", "{A3795287-24CE-4459-952D-4DB1AAF0E363}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Speech To Text", "Speech To Text\Speech To Text.csproj", "{A3795287-24CE-4459-952D-4DB1AAF0E363}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCR Tables", "OCR Tables\OCR Tables.csproj", "{3A2A66BF-942A-426E-AF3B-569DA34D4DF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spell Check", "Spell Check\Spell Check.csproj", "{08622A66-FB18-496D-87B2-56D3BD2C10FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{464705D3-4E5F-4268-95FC-C28EB64902DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{464705D3-4E5F-4268-95FC-C28EB64902DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{464705D3-4E5F-4268-95FC-C28EB64902DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{464705D3-4E5F-4268-95FC-C28EB64902DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3795287-24CE-4459-952D-4DB1AAF0E363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3795287-24CE-4459-952D-4DB1AAF0E363}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3795287-24CE-4459-952D-4DB1AAF0E363}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3795287-24CE-4459-952D-4DB1AAF0E363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A2A66BF-942A-426E-AF3B-569DA34D4DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2A66BF-942A-426E-AF3B-569DA34D4DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2A66BF-942A-426E-AF3B-569DA34D4DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2A66BF-942A-426E-AF3B-569DA34D4DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08622A66-FB18-496D-87B2-56D3BD2C10FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08622A66-FB18-496D-87B2-56D3BD2C10FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08622A66-FB18-496D-87B2-56D3BD2C10FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08622A66-FB18-496D-87B2-56D3BD2C10FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
