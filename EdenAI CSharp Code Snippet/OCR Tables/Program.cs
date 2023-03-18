@@ -19,12 +19,11 @@ public class Program
 
         HttpClient httpClient = new HttpClient();
 
-        //OCR tables Job Lunch here
+       
         MultipartFormDataContent content = new MultipartFormDataContent();
 
         content.Add(new StreamContent(File.OpenRead(filePath)), "file", Path.GetFileName(filePath));
 
-        StringContent stringContent = new StringContent("{\"providers\":\"microsoft\",\"language\":\"en\"}");
         content.Add(new StringContent("microsoft"), "providers");
         content.Add(new StringContent("en"), "language");
 
@@ -51,7 +50,7 @@ public class Program
                 Console.WriteLine(response.StatusCode.ToString());
             }
         }
-        //ORC tables get job results here
+ 
 
         //waiting until orc table processing is finished to get the results (we make a request every 5 seconds)
         while (true)
