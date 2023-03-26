@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-public class Program
+public class SpellCheck
 {
 
     static void Main(string[] args)

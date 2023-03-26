@@ -6,7 +6,7 @@ using System.Threading;
 using System.Net.Http;
 using System.Net.Http.Json;
 
-public class Program
+public class SpeechToText
 {
 
     static void Main(string[] args)
