@@ -103,8 +103,6 @@ using System.Net.Http.Json;
         MultipartFormDataContent content = new MultipartFormDataContent();
 
         content.Add(new StreamContent(File.OpenRead(filePath)),"file",Path.GetFileName(filePath));
-
-        StringContent stringContent = new StringContent("{\"providers\":\"microsoft\",\"language\":\"en\"}");
         content.Add(new StringContent("microsoft"),"providers");
         content.Add(new StringContent("en"), "language");
 
@@ -212,8 +210,6 @@ public class Program
         MultipartFormDataContent content = new MultipartFormDataContent();
 
         content.Add(new StreamContent(File.OpenRead(filePath)), "file", Path.GetFileName(filePath));
-
-        StringContent stringContent = new StringContent("{\"providers\":\"microsoft\",\"language\":\"en\"}");
         content.Add(new StringContent("microsoft"), "providers");
         content.Add(new StringContent("en"), "language");
 
