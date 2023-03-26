@@ -2,7 +2,21 @@
 ### this repository contains code snippet and quickstart guide for EdenAI API with C#
 
 
-* ## Quickstart with Spell Check API
+## Content 
+   - [Text](#text)
+     - [Spell Check](#spell-check)
+   - [Audio](#audio)
+     - [Speech To Text](#speech-to-text)
+   - [OCR](#ocr)
+     - [OCR Tables](#ocr-tables)
+
+
+<a name="text"></a>
+## Text 
+
+
+<a name="spell-check"></a>
+* ### Quickstart with Spell Check API
 
   #### POST : https://api.edenai.run/v2/text/spell_check
   
@@ -70,8 +84,12 @@ public class Program
   
 }
   ```
-  
-  * ## Quickstart with Speech To Text API
+ 
+<a name="audio"></a> 
+## Audio
+   
+<a name="speech-to-text"></a>
+  * ### Quickstart with Speech To Text API
   
    #### POST : https://api.edenai.run/v2/audio/speech_to_text_async
    #### GET : https://api.edenai.run/v2/audio/speech_to_text_async/{public_id}
@@ -176,7 +194,12 @@ using System.Net.Http.Json;
     
 }
 ```
-   * ## Quickstart with OCR Tables API
+
+<a name="ocr"></a>
+## OCR
+  
+<a name="ocr-tables"></a>
+   * ### Quickstart with OCR Tables API
   
    #### POST : https://api.edenai.run/v2/ocr/ocr_tables_async
    #### GET : https://api.edenai.run/v2/ocr/ocr_tables_async/{public_id}
