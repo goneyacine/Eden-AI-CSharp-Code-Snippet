@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OCR Tables", "OCR Tables\OC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spell Check", "Spell Check\Spell Check.csproj", "{08622A66-FB18-496D-87B2-56D3BD2C10FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text To Speech", "Text To Speech\Text To Speech.csproj", "{BF043023-E054-4561-9AF7-83047126AC14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Text To Speech", "Text To Speech\Text To Speech.csproj", "{BF043023-E054-4561-9AF7-83047126AC14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text Summarization", "TextSummarization\Text Summarization.csproj", "{CA7D3E88-DE54-4C9A-BA29-C18D21702C1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BF043023-E054-4561-9AF7-83047126AC14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF043023-E054-4561-9AF7-83047126AC14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF043023-E054-4561-9AF7-83047126AC14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA7D3E88-DE54-4C9A-BA29-C18D21702C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA7D3E88-DE54-4C9A-BA29-C18D21702C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA7D3E88-DE54-4C9A-BA29-C18D21702C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA7D3E88-DE54-4C9A-BA29-C18D21702C1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
