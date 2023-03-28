@@ -3,22 +3,22 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 
-public class CodeGeneration
+public class TextGeneration
 {
-    static void Main(string[] args)
-    {
+        static void Main(string[] args)
+        {
         HttpClient httpClient = new HttpClient();
 
 
         HttpRequestMessage request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
-            RequestUri = new Uri("https://api.edenai.run/v2/text/code_generation"),
+            RequestUri = new Uri("https://api.edenai.run/v2/text/generation"),
             Headers =
             {
                { "accept", "application/json" },
             },
-            Content = new StringContent("{ \"providers\": \"openai\",\"promot\": \"\",\"instruction\": \"write a code in c++ to calculate distance between to points in 4D space\",\"temprature\" : 0.1,\"max_tokens\":500}")
+            Content = new StringContent("{ \"providers\": \"openai\",\"text\": \"put your text here\",\"temprature\" : 0.1,\"max_tokens\":500}")
             {
                 Headers =
                 {
@@ -42,5 +42,6 @@ public class CodeGeneration
         }
 
         Console.ReadLine();
+
     }
 }
