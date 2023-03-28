@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Named Entity Recognition", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question Answering", "Question Answering\Question Answering.csproj", "{CE6B7A33-0917-4784-A958-A168F46634D8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PII", "PII\PII.csproj", "{107ED7EF-0616-4D02-A158-563C20046822}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{CE6B7A33-0917-4784-A958-A168F46634D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE6B7A33-0917-4784-A958-A168F46634D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE6B7A33-0917-4784-A958-A168F46634D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{107ED7EF-0616-4D02-A158-563C20046822}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{107ED7EF-0616-4D02-A158-563C20046822}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{107ED7EF-0616-4D02-A158-563C20046822}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{107ED7EF-0616-4D02-A158-563C20046822}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
