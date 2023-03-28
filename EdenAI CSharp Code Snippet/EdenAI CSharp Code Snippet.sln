@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom Entity Extraction", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Named Entity Recognition", "Named Entity Recognition\Named Entity Recognition.csproj", "{9092ECF4-2480-49B7-9F7C-7D618E5314F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Question Answering", "Question Answering\Question Answering.csproj", "{CE6B7A33-0917-4784-A958-A168F46634D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{9092ECF4-2480-49B7-9F7C-7D618E5314F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9092ECF4-2480-49B7-9F7C-7D618E5314F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9092ECF4-2480-49B7-9F7C-7D618E5314F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE6B7A33-0917-4784-A958-A168F46634D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6B7A33-0917-4784-A958-A168F46634D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6B7A33-0917-4784-A958-A168F46634D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6B7A33-0917-4784-A958-A168F46634D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
