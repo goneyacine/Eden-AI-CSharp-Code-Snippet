@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Code Generation", "Code Gen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text Generation", "Text Generation\Text Generation.csproj", "{00A5B486-788F-4E0F-B1E1-714ABAEC8214}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topic Extraction", "Topic Extraction\Topic Extraction.csproj", "{C5F57449-9E14-403D-BEAA-B12232F57D1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{00A5B486-788F-4E0F-B1E1-714ABAEC8214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00A5B486-788F-4E0F-B1E1-714ABAEC8214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00A5B486-788F-4E0F-B1E1-714ABAEC8214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F57449-9E14-403D-BEAA-B12232F57D1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F57449-9E14-403D-BEAA-B12232F57D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F57449-9E14-403D-BEAA-B12232F57D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F57449-9E14-403D-BEAA-B12232F57D1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
