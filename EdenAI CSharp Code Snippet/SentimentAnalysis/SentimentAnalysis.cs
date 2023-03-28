@@ -2,8 +2,8 @@
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
-public class TextModeration
-    {
+public class SentimentAnalysis
+{
     static void Main(string[] args)
     {
         HttpClient httpClient = new HttpClient();
@@ -13,12 +13,12 @@ public class TextModeration
         HttpRequestMessage request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
-            RequestUri = new Uri("https://api.edenai.run/v2/text/moderation"),
+            RequestUri = new Uri("https://api.edenai.run/v2/text/sentiment_analysis"),
             Headers =
             {
                { "accept", "application/json" },
             },
-            Content = new StringContent("{ \"providers\": \"openai\",\"text\":\"put your text here,\" ,\"language\" : \"en\"}")
+            Content = new StringContent("{ \"providers\": \"google\",\"text\":\"put your text here,\" ,\"language\" : \"en\"}")
             {
                 Headers =
                 {
@@ -35,7 +35,7 @@ public class TextModeration
         using (HttpResponseMessage response = httpClient.Send(request))
         {
             JObject json = JObject.Parse(response.Content.ReadAsStringAsync().Result);
-            Console.WriteLine((json["openai"]["items"]).ToString());
+            Console.WriteLine((json["google"]["items"]).ToString());
 
             if (!response.IsSuccessStatusCode)
                 Console.WriteLine(response.Content);
@@ -44,4 +44,5 @@ public class TextModeration
         Console.ReadLine();
 
     }
+
 }

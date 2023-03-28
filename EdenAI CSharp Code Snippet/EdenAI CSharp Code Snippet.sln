@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Keyword Extraction", "Keywo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextModeration", "TextModeration\TextModeration.csproj", "{0F99418E-6B9E-4EAB-A354-15473FEBE445}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentiment Analysis", "SentimentAnalysis\Sentiment Analysis.csproj", "{C71A4EEC-92F5-4D3B-B471-74C6E2A130E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{0F99418E-6B9E-4EAB-A354-15473FEBE445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F99418E-6B9E-4EAB-A354-15473FEBE445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F99418E-6B9E-4EAB-A354-15473FEBE445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C71A4EEC-92F5-4D3B-B471-74C6E2A130E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C71A4EEC-92F5-4D3B-B471-74C6E2A130E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C71A4EEC-92F5-4D3B-B471-74C6E2A130E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C71A4EEC-92F5-4D3B-B471-74C6E2A130E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
