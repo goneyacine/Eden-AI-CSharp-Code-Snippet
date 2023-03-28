@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text Generation", "Text Gen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topic Extraction", "Topic Extraction\Topic Extraction.csproj", "{C5F57449-9E14-403D-BEAA-B12232F57D1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search", "Search\Search.csproj", "{E8D8C85B-46CE-428C-8C5E-93DADD7C1F98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{C5F57449-9E14-403D-BEAA-B12232F57D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5F57449-9E14-403D-BEAA-B12232F57D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5F57449-9E14-403D-BEAA-B12232F57D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D8C85B-46CE-428C-8C5E-93DADD7C1F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D8C85B-46CE-428C-8C5E-93DADD7C1F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D8C85B-46CE-428C-8C5E-93DADD7C1F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D8C85B-46CE-428C-8C5E-93DADD7C1F98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
